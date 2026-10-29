@@ -1,0 +1,17 @@
+# Virtual Environment
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# DuckDB WAL files
+*.duckdb.wal
+
+# OS files
+.DS_Store
+Thumbs.db

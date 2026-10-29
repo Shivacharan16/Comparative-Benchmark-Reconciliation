@@ -1,0 +1,51 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Demo (run_demo.py)",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "args": [
+                "${workspaceFolder}/run_demo.py"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Tests (pytest)",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/Scripts/pytest.exe",
+            "args": [
+                "-v"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Install / Update Requirements",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/Scripts/pip.exe",
+            "args": [
+                "install",
+                "-r",
+                "${workspaceFolder}/requirements.txt"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
